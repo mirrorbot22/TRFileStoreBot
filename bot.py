@@ -1,4 +1,4 @@
-# (c) @JAsuran
+# (c) @TamilnaduCM
 
 import os
 import asyncio
@@ -76,8 +76,8 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/AsuranMoviefinder"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/JAsuranbots")
+                        InlineKeyboardButton("Support Group", url="https://t.me/TR_Discussion"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/TamilaRockers")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -150,7 +150,7 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = str(forwarded_msg.id)
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=JAsuran_{str_to_b64(file_er_id)}"
+            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=TamilnaduCM_{str_to_b64(file_er_id)}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
                                                               "Get Sharable Link", url=share_link)]]))
@@ -316,8 +316,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/JAsuran/PyroFilesStoreBot")
+                        InlineKeyboardButton("Developer",
+                                             url="https://t.me/TamilnaduCM")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -334,8 +334,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/JAsuran/PyroFilesStoreBot")
+                        InlineKeyboardButton("Official Channel",
+                                             url="https://t.me/Tamilarockers")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -352,8 +352,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/AsuranMoviefinder"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/JAsuranbots")
+                        InlineKeyboardButton("Support Group", url="https://t.me/TR_Discussion"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/TamilaRockers")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -380,7 +380,7 @@ async def button(bot: Client, cmd: CallbackQuery):
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!**\n\n"
+                    text="**📢நீங்கள் இன்னும் என்னுடைய சேனளில் இணையவில்லை சேனளில் இணைந்தால் தான் என்னை பயன்படுத்தமுடியும்You Still Didn't Join ☹️, Please Join My Updates Channel to use this Bot!**\n\n"
                          "Due to Overload, Only Channel Subscribers can use the Bot!",
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -396,7 +396,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/AsuranMoviefinder).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/TR_Discussion).",
                     disable_web_page_preview=True
                 )
                 return
@@ -406,8 +406,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/AsuranMoviefinder"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/JAsuranbots")
+                        InlineKeyboardButton("Support Group", url="https://t.me/TR_Discussion"),
+                        InlineKeyboardButton("Bots Channel", url="https://t.me/u7news")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
